@@ -23,3 +23,7 @@ Our paper may be found here: https://mtmailmtsu-my.sharepoint.com/:w:/g/personal
   * requirements.txt  
   * environment.yml
  
+## Background
+For this project, we are attempting to reproduce the results of "Risk prediction of cardiovascular disease using machine learning classifiers" by M. Pal et al. (https://pmc.ncbi.nlm.nih.gov/articles/PMC9206502/#j_med-2022-0508_s_002)
+
+The dataset used is the Cleveland data made available by UC Irvine (https://archive.ics.uci.edu/dataset/45/heart+disease)
