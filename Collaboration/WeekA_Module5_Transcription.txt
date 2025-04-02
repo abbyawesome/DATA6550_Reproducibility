@@ -1,0 +1,106 @@
+
+Alrighty. Hello, everyone, again. Oh, good. Hello. Let's see.
+
+We got a couple of papers to choose from, which is nice. Abby, those last two that you posted, were you able to find any datasets for them? So there was one on that, like, fault detection and chemical plants. That one does have a dataset that's on Kaggle. It tells you where to find it.
+
+Wow. The, diabetes and Palestinians, that one absolutely has nothing. They said they got it from a hospital, and they made no reference of how or why or I feel like that makes sense with the hospital datas. Oh, yeah. It makes a lot of sense, but it's also kinda like, we wouldn't be able to do any analysis.
+
+Yeah. Like, I could email the authors, and that's about it. Yeah. I'm not sure if we can yeah. I don't know about the timing on that one.
+
+Right. Yeah. Yeah. That seems a little bit more than what we got the stomach for. I do feel like we've worked a lot with the Titanic.
+
+Yeah. Because I wasn't able to I will. Sorry. Go ahead. No.
+
+Because I wasn't really able to find anything that I was really excited about, but also I'm pretty sure Steven is about to say it. But with the Titanic, I think we know it, like, back and forth, like, literally back and forth. So I feel like it could make the most sense to do since we wouldn't have to do too much on the learning side and rather we can just jump right in. Yeah. I was gonna suggest, the one that I found just because I feel like it's similar in ease to the Titanic one.
+
+Like, it's it's very doable, but there are, like, slightly or I would say it's, like, a step up with, like, some slightly different, things because they do take they do do, like, some general exploratory data analytics, and then they use two machine learning techniques of, just a, neural network and then k nearest neighbors, which I feel like aren't too bad to implement. And the datasets from UC Berkeley, I think, or wait. No. It's UC Irvine. UC Irvine.
+
+So it's the data is also readily available there, but that is just my own input. Yeah. But what whatever. I'm down for whatever you guys wanna do. Yeah.
+
+The only problem I could see with the dataset you had gotten was just with their, neural network, whether or not those input layers, hidden layers, and output layers are accurate. Yeah. I was gonna like, if if we plan to do that one, I was gonna offer to take on, like, the neural network just because I've done a lot of work with neural networks. So I would feel comfortable handling that task. But, again, that is if we wanna pursue that paper.
+
+And I feel like, never mind. Just remember what I was gonna be saying. You feel like what, Steven? Oh, well, I was just gonna say, like, I I feel like they gave enough information of just, like I mean, like, the only biggest things that I would need are, like, the activation functions because then it's just a matter of trying to determine, like, the size of it, which shouldn't be too hard. But that's also just me.
+
+Pretty much just like I feel comfortable handling, to try to reproduce a neural network. I feel like the K and N one shouldn't be too bad because it brings up a cross validation score of K and N. And I think with the size of the dataset, it also shouldn't take too long to run. So we would be able to experiment a lot with training these dataset or with training these models. Yeah.
+
+Alright. Well, let's just do it. So I good to you. I don't wanna interrupt anyone. Anybody have a problem?
+
+I don't have problem with this. I'll do the k n. I don't either. I was gonna say if anyone doesn't wanna do this, I'm perfectly happy with not pursuing it as well. Yeah.
+
+I I'm fine. I'll do the I'll I'll do whatever you guys don't wanna do, but but but if if if yeah. I'll I'm happy to do the KNN. I don't think I've done the multilayer perceptron. But I don't think well, that's what you're talking about here, and that's the neural network.
+
+What is the other piece? What's the big piece to this? I just have two machine learning algorithms, the neural network and then the KNN Yeah. And then some exploratory data analysis. Why don't we just write do it along those lines?
+
+Somebody do exploratory, somebody do KNN, somebody do the neural network, and the other person write it up. Where did you get that dataset from? I, I found that they, I believe it was somewhere in the paper that they brought up. Their data was from the UC Irvine. Let me find specifically where it says it too just so I can back up my source.
+
+But I saw there was, like, the UC Irvine dataset. So I just went on UC Irvine, and I looked up, since this was predicting heart disease, I found the heart disease one. And I just cross referenced with the, I found this data dictionary that was used by the paper. I'm sending it right here. And I just cross referenced it with the variables table in the UC Irvine, repo, and the number of features matched up and the number of variables matched up.
+
+So Cool. Yes. So it should be accurate. And it was also done in 2022. So it works for our within the five years.
+
+Yeah. No. I could do, like, preprocessing if it needs it at all. K. I don't know.
+
+But I can do exploratory. I believe yeah. They they talked about a little bit of preprocessing that they did in in that paper that I sent. I believe it's section 2.2, where it says preprocessing of CDD data. They go they do smoothing, standardization, and aggregation.
+
+Cool. Yeah. Yeah. And then converting some categorical variables into dummy variables and then some I think scaling them using standard normal distribution. Yeah.
+
+Yeah. I can do all that. Alright. So that's really what with exploratory piece are are we talking about creating this chart, as a separate step. So I'm writing this down.
+
+Oh, never mind. You beat me to it, Abby. I think we can probably just, like, gang up on the paper together. Yeah. Because I feel like this one shouldn't be too bad to write a paper on.
+
+I mean yeah. I I don't know. I think it should be okay. Yeah. We'll just about write up our section, and then we'll figure out who's got some time to to wrap it all up at the end.
+
+I am gonna say that there's the one weird thing that I have noticed when I asked him about. At the end, you will need to save your environment. We have to have that in the GitHub this time. What do you mean? Like a virtual environment?
+
+Like, if you're using Anaconda, I can show you how to do it after. You just need to be either using Anaconda or a virtual environment of some kind to be able to know what libraries you're using. I'm not following Abby. We know what you know, we're talking about you're talking about you're talking about something other than Jupyter. Right?
+
+Do you use Jupyter Notebooks through the Anaconda Launcher? No. But I did I mean, it's part of that package. That's how I got that stuff on my machine all through Anaconda. Okay.
+
+How how do you launch Jupyter notebooks or JupyterLab, Charles? I launch the notebook from the command line. You open? You launch Anaconda? So I just I just navigate to the directory that I wanna be in, and I just do my command line.
+
+Then on done, then you're gonna scroll down until you see dupere notebook and it's gonna launch into your browser as a local host thing. So what would we be saving, Abby, if we're doing So you have the command conda. Right? Like, if you type conda, it knows what that is? Yeah.
+
+Yeah. I do. That's all part of the pack. Yeah. Cool.
+
+I'll get I'll do a little instructional thing after this. It's a little funky on different computers. It's basically just like you can get Python to spit out the list of all of the packages you're using. Oh, okay. Is that all that we're trying to get here?
+
+Yeah. If you also do if you also do pip list Yeah. It should also do the same thing. Yeah. I can I can give you that?
+
+Don't don't worry, Abby. But thank you for explaining that to me. I I can give you that. Okay. Cool.
+
+No. Cool. Does I don't I don't know why we need it, but we need it for this one. Interesting. Condal list also does the same thing, but for con ah, interesting.
+
+Oh, no. When you do Condal list, do you do that in the Jupyter notebook or in the terminal? You could do that. No. You would do Condal list on the, terminal.
+
+I see. I think it also I think it also works in Jupyter just because you can also run, terminal commands in That's true. Like cells. Yeah. Yeah.
+
+K. Run anything. You run a command line inside the notebook. Nope. But if you You can hack and put start if you start Jupyter from the navigator, when you go to, like, your packages that you have, like, where you can see the list of them, you can basically click an export button and get a list.
+
+Interesting. So I wonder why he wants that. And he maybe he's gonna run it himself? No way. I feel like it's a little weird because, like, at least for me, I like, the way I work is I have, like, I have certain libraries that I keep globally, like NumPy and Pandas.
+
+But if it's something specific, I'll only install it in, like, my virtual environment. So I Yeah. I don't know. It's fascinating. But if he wants it if he wants it, then we'll we'll find a way to give it to him.
+
+Yeah. I mean I just Yeah. That I I can give I I can give us that from my step. Sure. Oh, there's also PIP It's very weird Sorry.
+
+Go ahead. That I wanted it was just weird, and I wanted to make sure that people knew. Yeah. I'm I did I read the document a couple times. I didn't pick that up, Abby.
+
+So you're you're good for that. I appreciate it. Also, if you use PIP, there is a PIP freeze command which, like, does PIP list, but it outputs them into, like, a text file. I forgot those specific arguments, but I know it's PIP freeze. Yeah.
+
+You need either a I think it's I don't know if it's text or dot m d, or you could have a dot y m l file. Y m l is the conda version. Ew. YAML. Yep.
+
+That's That is an that is an interesting new requirement. Request. Yeah. And this just just test finding that. I should know this, but it's due, what, Wednesday of next week?
+
+Yep. Okay. So that get to meet oops. Sorry. Go ahead.
+
+No. I I think you're getting to what I'm trying to get to. If we meet on Tuesday, we would have a chance to review what we've got and pull it all together. No. So I probably can't meet next Tuesday.
+
+Yeah. Me neither. Probably. Yeah. I could do Yeah.
+
+I wanna do Wednesday or month Monday. Yeah. Sorry. I was wondering. Monday Monday will be much better for me.
+
+Fine. That's good. I'm fine. For me. At seven still?
+
+What time do we want? Yeah. I I I like doing it just a little bit later. By the time I get done with work and everything, that that's just good for me. Yeah.
+
+Alright. I mean, any any final questions or burning desires before we end the recording? No. I'm good. I will take I'll I'll take yeah.
+
+I was gonna say I'll take that silence as another no. Alright. Stop it right now.
