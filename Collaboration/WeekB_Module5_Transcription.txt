@@ -1,0 +1,222 @@
+
+Alright. Yeah. So I for starters, I put together sorry. I put together a, neural network, and I have an accuracy that's close. I think theirs was, like, 82 something.
+
+Oh. And mine was, like, 81.6. But when I started doing some work towards, like, the, confusion matrix matrices that they have, I noticed that for the KNN model, their numbers add up to a different number than what the, neural network number adds up to. I don't know if maybe like, for example, if you look at figure six and figure seven or the, infusion matrices, maybe I'm just misinterpreting something. But, I think the confusion matrix numbers for the k and n are add up to, like, 20 or so less than the count for, like, this Yeah.
+
+No network model. They're different. Very different, aren't they? Yeah. So I'm just wondering, like, did they use different splits for for those?
+
+Or What would What they I mean okay. This is gonna show my those numbers aren't supposed to be the same. They're two different models. K n K and N is a nonparameter. I mean, right, these should not be the same.
+
+Would they have if they used because presumably, they're only showing the, like Well, I mean what they ran on their, like, testing set. So it just shows that their testing sizes are different between them. Yeah. And that was, like, I guess, my point is, like, why oh, sorry. Go ahead, Charles.
+
+Well, I'm I'm just thinking out loud. I'm sorry to keep interrupting. They they did a they had 303 rows. They did an eighty twenty split, and they didn't keep any out for validation. Right?
+
+So what does that give them? 65, 60 four, something like that? I I'm not looking at my numbers. But I think it's between 60 to 61 is what like, I believe it's 60 for our cases. Like, we have 60 rows for the test set.
+
+Yeah. So then, like, my my point then would be, like, did both of these confusion matrix matrices not, like, both add up to 60? The first one adds up to 61, and I did remove a few rows. They might not have removed. Okay.
+
+Yeah. But then figure seven adds up to let me just do some quick math because of some to '97. Ninety '6 or '7. Right? Ninety seven, something like that?
+
+So they didn't use an eighty twenty split on it. Is that is that are we just making that assumption they did they used a different split? They'd either use a different split or have more data for just the second one for some reason. And okay. And they didn't call that out in their methods because Okay.
+
+Yeah. Because it's under a better number. In, like, in at the beginning of chapter two, it says the confusion matrix of each technique was obtained. And out of 303 occurrences in the dataset, 243 or 80% were used to train the two models. So then yeah.
+
+So then 60 instances were fed to know the class. So technically difference. There's no explanation, which you would almost have some explanation. Yeah. So for some reason, figure seven is incorrect.
+
+Question mark? Yeah. Okay. Feyorg plus plus the z. That's probably just incorrect.
+
+Yeah. I noticed that today, and I was like, I feel like this is a good thing to bring up because, I mean, I can probably change I mean, I well, not I probably, but I could change my numbers to reflect that or, I guess, like, the split points for myself for my data to reflect that. But just I would say just follow what they said that they were going to follow instead of trying to reverse engineer what they came up with. Gotcha. Not to match there.
+
+Our goal is to point out some flaws, I I kinda think. Right? I think I might have missed misinterpreted because I think my job was, like, to try and match their numbers specifically. No. Or as close as possible.
+
+Ours is to try as best as we can to recreate what they did following the directions they gave. Yeah. Assuming their methodology was sound and everything was presented. Right? But that's a big if.
+
+That's a lot of conditions. Yeah. Because if they wrote this project by, hey, here's our exact methodology, here's our code, here's our data with it to show, like, every step of it, It might be we get a different outcome than with this paper where they only kind of go through the, like, overviews instead of in-depth. Even does that make sense? We're not at all I mean, it'd be nice if we were perfectly matching theirs.
+
+My my k and n did not match theirs. I had better results than they did. And, you know, that seems, like, pretty secondary to me. Yeah. I guess I should open mine up and start looking at it again.
+
+It's been a it's just All in all all in all, I've got together a model, and I have at least the, accuracy. I'm just putting together the, I guess, confusion matrix and then the that, like, that the classification results as well. Yeah. I am I just went back over the requirements for a project, and I realized I did my data visualizations wrong. So I am going to spend time redoing those because I did not realize that I need to replicate the visualizations, which is interesting.
+
+Question mark? It that's I I don't think that was the focus of his, I think the modeling, honestly. Yeah. Because I I feel like the modeling will be the most important part. But here, it was like project components under reproduction attempt.
+
+It says recreation of key visualizations. Yeah. Yeah. Okay. So in you're right.
+
+I think that is an important factor because of, like, our the other group project we did about good visualizations. And so Uh-huh. You know, if you're not able to recreate a a visualization from a paper, that could probably show how they're trying to hide, how they potentially skew some data. Like, that might be an ethical implication because of that. Because, Steven, the data that you put originally, was that the data they used itself, or did you go in and do data cleaning?
+
+The one I pulled was directly from UC Irvine. And then Okay. Yeah. That well, that one's in the, I think, original. And then in the process, there was the, d f I forgot the names.
+
+I know one's d f scaled and then the other Yeah. Pre processed. Oh, okay. Yeah. Okay.
+
+That makes sense because the okay. I actually, probably never mind because I did have some issue trying to recreate. Like, I had some issues trying to create some visualizations I wanted because that information wasn't included. So maybe I can talk about that instead. Can you provide an example?
+
+What was it? I think I was trying to where where's the let me get the data dictionary, then it'll jog my memory. Because if it's one of the visualizations of, like, for example, the area under curve, that one makes sense just because that relies on the results of the models. Yeah. It was the it was the, like, visualizations at the beginning.
+
+Like, for example, I wanted to see the correlation between chest pain and and sex, but it wouldn't let me because for some reason all of the categorical was gone? Or is it already in there? You were looking at the processed one, so I had already changed that into dummies. I was looking at the original because I realized the I realized probably I should use the original for the visualizations instead. Let me see what the original looks like.
+
+Oh, yeah. The original has a one or a zero for sex. Maybe I was maybe I am looking at the wrong thing, or maybe I am Which figure number was the one you were trying to recreate? Oh, no. This was like me just going in just in general.
+
+Oh, okay. Okay. Yeah. But I think I'm going to have to probably go back and redo some of these. Which is fine.
+
+It's not the end of the world. I'll do it tomorrow afternoon before class, but yeah. Okay. So if that's mostly oh, sorry. No.
+
+No. Go ahead. You're responding to her. Go ahead. Oh, no.
+
+I was just saying if that's mostly up for our coding stuff, we can talk about who gets what on the paper. But Well, I I do have a I, yeah, I wanna talk to, I put my test result. I did a comparison of my metrics and their metrics, and I put it in the in our Discord. Oh, wow. Mine yeah.
+
+So I wanna talk about this a little bit. It's a little funky in my mind. So you could see my metrics are significantly better than theirs. Right? Uniformly, better.
+
+And I'm left to wonder, you know, because, well, I I would say I'd love to wonder what what would cause such a difference. Right? I I studied pretty carefully before I jumped into this. Let me just go back. I looked pretty carefully at how they set up their K and N.
+
+You know, use standard scaler like we did. I looked at their distance, their weighting. I used their K and N. I took the default for for the distance metric, and they didn't specify. So I think that's reasonable.
+
+And I'm I'm obviously wondering I mean, I need a theory as to why my numbers are different than theirs, and he and it's come down to one of two things. One, I think, is plausible. One, I think, is is is probably implausible. My my my theory number one is it's a very small dataset. And with 300 rows, 303 or whatever it is, you Abby, you said I didn't look really count, but you said you may have dropped 400 to the next.
+
+Right? 300 is not a lot, especially for a KNN. Because if I understand the KNN, it does some sort of geometry to to cluster or group dots together and it it sort of gives you a weighted value of its neighbors. Right? So, a couple of easy flips or borderline instances.
+
+Right? I I feel like that could probably impact the performance metrics in a small data set like this. That's my best working theory. My only other option is that our tools are much, you know, this is a the 2022 paper that that our, you know, that has scikit learning improved that much in in their modeling. But with a data set of 300, I doubt there's any real impact.
+
+And I just kinda wanted to talk that out and see what y'all's thoughts are were are. I do have a quick question. Yeah. I noticed in, the chapter 2.2 in the paper of the preprocessing of CVT data, it says that it has a cross validation value of 20. Is that the same as the number of neighbors that you you used in your, classifier, or would that be, like, a cross validation, of, like, a 20 fold cross validation?
+
+I didn't do cross validation, so that is not the number of neighbors. I don't think, you know, you set your neighbors to 20 because that's what he did, and it's it's drawing some geography around 20 dots, 20 data points. Right? I didn't do any cross validation online. Did I miss that?
+
+No. I know. But that that's what it says in in the chapter 2.2 is that, all all variables were scaled down using standard normal distribution, and a cross validation k and n value of 20 was applied. So I'm just wondering if that was for, like, you know, k fold cross validation or it was supposed to be for neighbors or, like, number of neighbors. I said k is 20, and that's all that I did.
+
+Okay. Set that for k for different k values between one and twenty one, they got different accuracies. So it sounds like they picked their best. And and that's why I use 20. Right?
+
+So Yeah. Does that strike anybody as a problem? I was just curious. Is is k in in inherently a cross validation? Is that what that's saying?
+
+Well, I was just wondering if they, you know, up since this is a part of the preprocessing, if they did, like, just a separate, like, you know, like, repeated k fold of, like, a 20 fold, cross validation of the dataset and then tested different k values. Just because I noticed that, like, k is only brought up or I guess k is brought up separately from cross validation, at least in my interpretation of the paper, but it could also be interpreting it wrong. Yeah. That that was my interpretation too. So I guess and I guess we we need to think about maybe, you know, if in fact, I might have not done this.
+
+I mean, to be to be fair, we could also, like, bring that up as a problematic feature of the paper. It's just, like, the lack of clarification, really, of their preprocessing. Yeah. Yeah. Yeah.
+
+Which I think is probably something he's he's he's much more interested in, right, than than trying to match their numbers. One one other point, it's a very, very fine point. I think it is no real bearing, And I could be wrong, but I think and I I think they did their split before they did their standardization. They split x and y separately, which I don't believe we did because I split my data from Abby's standardized data. Is there any chance I cannot imagine it would on such a small set.
+
+Is there any chance that might have made up for some of this difference? So it kinda can. Like, you are only supposed to really scale on your standardized data. I didn't know if you guys were doing cross validation, and it can make it a little easier just processing wise to already have it failed. It's not the best way, but it's easier.
+
+So should I go back and I would I don't think that it would account for that big of a difference. My guess would be that they might have just literally had a different random seed or they might have split it. Like, their test and train might have been split just a little bit different. Yeah. And so Yeah.
+
+With that small data set, you just ended up with a better set. Right. Right. That that's what I see. The random seed is a very good point to include in the paper because they also I mean, I know that typically in our data science classes, we oftentimes have used c like, random seeds to, like, go through assignments and stuff like that.
+
+And that I don't think a seed was brought up at all in this paper. Actually, now that I'm control f ing, there isn't any mention of a seed. So that is a a great point to bring up. Thanks. Alright.
+
+And what are the I'm making some notes. I'll I'll write I'll write a little bit about that. Is that it? Is that is that anybody else got any other any other thoughts? Okay.
+
+Yeah. Tensor TensorFlow was a a freaking pain in the ass to try and import. I got so frustrated. This is a a complete aside, but there's some there's some funky going on with TensorFlow. But that's just my own complaints.
+
+Yeah. TensorFlow has I I'm not I have a very interesting relationship with TensorFlow because I have never been able to get it to run. Oh, I've used it before, but it literally like, I let it try I did, like, I did just, like, a straight up import TensorFlow, and at first, it was taking, like, thirty seconds and, like, the cell didn't finish running. I was like, okay. That's weird.
+
+Mhmm. I let it sit for, like, ten minutes, and it still hadn't finished running the cell. I was like, what is going on? So Yes. I remember when I had to install TensorFlow last semester, it worked for probably, like, two seconds, and then it kept crashing slash choosing not to work.
+
+No. I've gotten it to work before, but the only way I've ever gotten it to work is you literally have to make a brand new environment. You have to just install Tableau and let it get all of its little dependencies because otherwise you've already gotten one and it's the wrong version. I understand. Abby, the I've had problems with that before too, and I I I got it fixed because I I've got it in my stack, but I I think that's right.
+
+I think I've run into that myself. No. I That's that's the one I've gotten at least. I I tried doing that. And, I mean, well, like, that's what I did initially, and it was still running into issues.
+
+And I was just like, this is so annoying because normally I use PyTorch, but I wanted to use TensorFlow because it was just easier for a basic MLP. And so I was after, like, spending probably two hours just trying to troubleshoot, I just said fuck it and just move back to type PyTorch. It was Are you on the Yeah. Yep. It doesn't have all the dependencies you needed.
+
+That's and that's so weird. Because when I when I took neural networks in my undergrad, we used TensorFlow, which was perfectly fine. Like, it worked perfectly fine, but I I have no idea. Do you have iPad is it only works correctly to download everything on PC? On Mac, it just says, I'm done.
+
+No way. I'm good. Steven, I assume you probably have the newer MacBooks, like, with the Yeah. Because Yeah. For some reason I was gonna say that, like, I know that PyTorch has some, like, functions that are, for some reason, do not work on the m chips, which is so weird.
+
+Like, for like, linear algebra operations just do not properly compute on the m chips for some reason. That's amazing. Yeah. There's, like, a there's an entire, like, GitHub triage page specifically for all the bugs or, like, the M chips in PyTorch. It's it's kinda crazy.
+
+But anyhow. Yeah. Did we wanna move on to, parts of the report? Yeah. I think so.
+
+Yeah. For the report, I think it makes sense to do what we've always done and just contribute based off of what we worked on. I'm also happy to take care of some of the ethical analysis or, like, the ethical analysis slash implications portion. I Unless anybody else I can say unless anybody else has a burning desire to do it. No.
+
+I did it last time. So if you if you like to do it, it is all good. I will take the introduction. But I'm I'm trying to get it open. I'm not looking at the assignment.
+
+Oh, send a screenshot if that helps. I'll have it open right here. So, Steven, what what are your thoughts? I mean, we Steven, what are your thoughts about the ethical issues or considerations? Well, I think we've talked about some of them of, like, how, the, there's, like, ethical implications of just, like, quite literally possibly, like, incorrect representation of the data, like, the mirroring of the, like, the the target variables, the implications of, like, not having, like, proper definitions of, like, how they went through their process of, like, of of how they went through, like, their algorithmic modeling processes, like, with K and N.
+
+You know, they there there was quite literally, like, one paragraph for, like, act probably, actually, like, only a sentence of that, like, kinda went over, like, what was what was done for, like, the KNN. And then for, like, the, neural network, it was just like, oh, we used a a multilayer perceptron. And, like, they only really just brought up that there are two types of activation functions, not specifically what kind of activation functions they used. Yeah. They're, like, there is they don't provide enough information to reproduce it.
+
+So because of that, the, I would say, reliability of this paper is very poor because you can't be certain on what they what they represented, especially since, you know, you've already found your findings are much higher than their results. So why is that? You know? Like, are they are they BS ing or, you know, what's going on? Yeah.
+
+I I okay. Alright. Thank you for sharing that. I that that helps me. I I think one of the biggest issues we gotta talk about is is such a small dataset.
+
+I mean, really 300 rows to run a neural network on. I mean, maybe that's a prototype, but that would never cut it. In the real world, that would never be considered reliable. Right? And they're publishing a paper on this, presumably evaluating whether somebody has cardiovascular disease.
+
+I mean, that's my problem number one. The extremely small dataset, I don't see how that could be reliable. Yeah. And it's not possible. I get that.
+
+Like, it's, you know, from The U from UC Irvine and, like, a lot of their especially, like, machine learning datasets are really just, like, for baseline studies, but also to write a paper about this does have, like can have some poor implications for people that, you know, want to do research based off of this paper. Yeah. Or even to make a prediction, right, off 300 rows. That that it sounds absurd to me. Well, it's also been cited a bunch in other articles too.
+
+It has been cited a lot? Yeah. If you go to the top of the, like, article, it says cited by other articles, and it lists at least five there. I don't know how many it has. Yeah.
+
+So isn't that kind of a compounding effect? Isn't that the same problem, but worse? It's been cited by two different friends. Yeah. I I was just about to say that.
+
+Also, the fact that, like, I mean, it is this new as well. Like, I'm pretty sure this dataset let's see. How long has this dataset been around too? That's another, I think, important factor. Donated on $6.30 $19.88.
+
+Oh. Holy hold on. Let me maybe I'm looking at this wrong, but this is what I found. Well, does that matter? I mean, it sounds ridiculous, but does it really matter?
+
+It's just data. I I think it could. It would matter if it's people are on different medications now. Oh, yes. I was gonna I was gonna say the timing of this because this is, like, almost this is, you know, forty years ago.
+
+Like, a lot has changed in in this past forty years. Yeah. Yeah. Yeah. Okay.
+
+Alright. So that okay. Good point. Good point. Wait a minute.
+
+Oh, hold on. Hold on. I'm just thinking. We're we're trying to tell the difference between we're trying to predict the difference between somebody who does and doesn't have. Would would medication even matter?
+
+Would treatments You're already on, like, statins and stuff to try and kind of prevent later heart disease. Also, probably people's age of heart disease has changed over time. I'm just guessing. Yeah. Okay.
+
+That's a good point. That that's certainly worth calling now. And med like, medical practice can also have changed in those past forty years. So, like, the accuracy of, you know, taking someone's resting blood pressure and taking someone's cholesterol could have changed in those forty years as well. Yeah.
+
+Of course it is. Sorry. Have you what were you asking? I was just gonna say in 1988, many more people would have been smokers than today. Yeah.
+
+Do we have smoking as a feature in this dataset? I don't think I remember. How ridiculous is that? Well, then you also have to think about how how important did doctors view smoking back then as well, because I think it was definitely a lot more normalized back then. Yeah.
+
+Okay. You're exact okay. That's another good point. You're exactly right. Today, we look at it as toxic.
+
+You know, just by looking at the package, I guess, forty years ago, that wasn't that wasn't the way people thought of smoking. Especially as somewhere I I would assume that Cleveland, though, like, Cleveland Forty Years ago was also a very rural area, potentially. So there could also be, you know, demographic, implications there as well. Yeah. Okay.
+
+Alright. So so you got a good grip on that. Those are good points, Steven. Everyone else helped me out. So I'm I'm just going and writing down for the sections.
+
+I was for results, Steven and Charles, because you're the ones that did it. All good? Oh, yeah. Yeah. Yeah.
+
+I'm sorry. What is your question? Methodology. Okay. And then I can also do recommendations if that's cool of just publish what you did.
+
+For sure. Oh, I see the final report. I'm so blind. Results. Yeah.
+
+I can take care of Is that is that all I'm signing up for, is the results section? You can add yourself to something else if you want, but I think we're good. Okay. Okay. Yeah.
+
+I'll be doing neural network results and then some of the ethical implicate or, I guess, ethics discussion. Yeah. And I'll do the introduction. And, Steven, just so I can be helpful, I'll do a little bit on the reproducibility and their challenges and their resource constraints for the K and N. I'll just give you some fodder.
+
+You can use it or not use it just just to represent both model. Yeah. For sure. That works for me, man. I appreciate it.
+
+I'll add you to the ethics thing too. Tag tag teaming results in ethics. Yeah. My my results is that this is this is this paper sucks. Well, it I it's kind of it goes back to that, it was in the last section.
+
+Remember the lady said we we just have the assumption that you you you search something in Google and you're gonna get a reasonably fair answer. That's a terrible way of saying what she said. Right? I I I assume with published research, you're not gonna get such stupidness. I just this this is telling, shocking a little bit.
+
+Am I am I the only one that thinks that? You've clearly not had to read a lot of IEEE papers. It it's just real rough. I was I was thinking I was I was gonna say, like, I've in I I took deep learning and, like, every other week, you gotta read like, we had to read scientific papers. And all I have to say is, like, it would be, like, the process of reproducing any of those papers is, like, 10 times easier than what was, like, 10 times easier and clear than what was, like, known in this paper.
+
+Like Okay. It was like, everything there was just so much more descript. And, like, even though they didn't give exacts because, you know, it's it's cutting edge research. You know, you wanna be the one that has to get ahead. You can you still have a very, very good baseline on how to recreate your own model.
+
+Yeah. Okay. Well, I got used to, because I'd had to read papers at my job for Siemens, and everything that you publish is considered to be your, like, your company secrets. And so you need to be as vague as possible, but also write enough that you can get published and be maybe get a grant later. And so it's all these, like, half sentences that kind of give you an idea, but nothing clear.
+
+Okay. So you've routine the thing that's kind of, I don't know what you'd call it, sloppy work, but okay. Oh, I think this one was pretty great. It pointed to the actual data they used. Oh, yeah.
+
+Right. I was gonna say, I think doctor Wallen brought that up of, like, you know, you wanna be as vague as possible, but still, you know, make the cut. Yeah. Alright. Well, anything else we gotta talk about, gang?
+
+Timeline. I I I should know it. I just don't, so bear with me. What what what what are we targeting for this? Tomorrow, Wednesday?
+
+I should hopefully have everything ready by tomorrow evening. Yeah. Same here. I'm think I'm going to try and do as much as I can between when I get out of my office and before I have class. Okay.
+
+Well, tomorrow noon will be mine too then. No problem for me with that. Do we even wanna talk on Wednesday or we just I I don't necessarily feel like we need to, but do we want to? Probably not. This is kinda easy.
+
+We can put updates in the chat. Yeah. I was gonna say we can message on disk in in the chat, and then if necessary, we can just hop on a call. But Yeah. Yeah.
+
+That's a great idea. Just just make sure Wednesday also might be a little wonky for me too. So I won't so I won't be, like, too certain on how much time I'll be able to, like, physically talk, but I'm 100% available to message. Or that that that's a great idea. That's all we would need.
+
+I don't really like I said, I don't see the need to get together. Okay. Yeah. Probably just message to say when you're done writing your thing so that we know when you're done writing that. Yeah.
+
+Okay. Alright. I'll make sure it's there tomorrow evening. If if anybody were to suddenly decide they needed earlier, just just let me know and I'll, you know, I can I can do whatever we want? Oh, but don't forget anyone to do the, like, reflection thing because I always almost forget that.
+
+Yes. And we have a reading quiz due on Wednesday night. We do have a reading quiz due Wednesday night. So many things due. It wasn't are close to being done.
+
+Wasn't there one other surprise in this assignment? Was he talking about the was it that YAML thing? Or Oh, I think he said not to worry about it, maybe? Yeah. Yeah.
+
+He has since said not to worry about it. And, also, all of our code should save the libraries that we used. So That's why I figured it wasn't an issue in the first place. So that's why I was curious on why he brought that up. Okay.
+
+I think, Abby, I think you said it. He it was the library's thing. He wanted us to make sure we we can give him what our environment looks like. I don't have a copy of NumPy and Pandas for mine. Yeah.
+
+Same. I'm I'm throwing out imports y'all I never heard of before. Well, good for you. Thank you. Thank you.
+
+I worked really hard on that. Uh-huh. When do you start your new job? April 14. We'll go ahead and start the morning now too.
